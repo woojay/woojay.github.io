@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>Modis Validate</title>
+    <!-- <link rel="stylesheet" href="css/prism_w.css"> -->
+    <!-- <link href="css/ghpages-materialize_w.css" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link rel="stylesheet" href="css/index-mat.css">
+
+</head>
+
+<body>
+    <div>
+
+    
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-wrapper purple lighten-1">
+            <a href=#! class="brand-logo ">
+                Portfolio
+            </a>
+            <a href="#" data-activates="mobile-menu" class="button-collapse">
+                <i class="material-icons">menu</i>
+            </a>
+            <!-- Navbar side options -->
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="settings.html" class="z-depth-0 purple lighten-1 waves-effect waves-light btn modal-trigger">
+                        <i class="material-icons">build</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons">message</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons">power_settings_new</i>
+                    </a>
+                </li>
+            </ul>
+
+            <ul id="mobile-menu" class="side-nav">
+                <li>
+                    <a href="#settings-modal" class="modal-trigger">
+                        <i class="material-icons">build</i> Settings
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons">message</i> Notifications</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons">power_settings_new</i> Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Modal Structure -->
+    <div id="settings-modal" class="modal">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <div class="row">
+
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header">
+                            <i class="material-icons">alarm</i>Date &amp; Time
+                        </div>
+                        <div class="collapsible-body">
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">
+                            <i class="material-icons">settings_ethernet</i>Network
+                        </div>
+                        <div class="collapsible-body">
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">
+                            <i class="material-icons">storage</i>LDAP
+                        </div>
+                        <div class="collapsible-body">
+                        </div>
+                        <span></span>
+                    </li>
+
+                    <li>
+                        <div class="collapsible-header ">
+                            <i class="material-icons ">archive</i>Backup &amp; Restore</div>
+                        <div class="collapsible-body ">
+                            <div class="row ">
+                                <form>
+                                    <div class="col s12 ">
+                                        This is an inline input field:
+                                        <div class="input-field inline ">
+                                            <input id="email_inline " type="email " class="validate ">
+                                            <label for="email_inline ">Email</label>
+                                            <span class="helper-text " data-error="wrong " data-success="right ">Helper text</span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header ">
+                            <i class="material-icons ">supervisor_account</i>Admin Info</div>
+                        <div class="collapsible-body ">
+                            <div class="row ">
+                                <form>
+                                    <div class="col s12 ">
+                                        This is an inline input field:
+                                        <div class="input-field inline ">
+                                            <input id="email_inline " type="email " class="validate ">
+                                            <label for="email_inline ">Email</label>
+                                            <span class="helper-text " data-error="wrong " data-success="right ">Helper text</span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer ">
+            <a href="#! " class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+        </div>
+    </div>
+
+    <!-- Main Table -->
+    <!-- <div class="container"> -->
+
+
+    </div>
+    <!-- container -->
+
+    <script src="js/jquery-3.3.1.js "></script>
+    <!-- <script src="js/materialize_w.js "></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js "></script>
+    <script src="js/index.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.button-collapse').sideNav();
+            // $('.datepicker').datepicker();
+            // $('.timepicker').timepicker();
+            $('.modal').modal();
+            $('.select').select();
+            $('.collapsible').collapsible();
+            $('.tabs').tabs();
+
+        });
+
+        // var instance = M.Sidenav.getInstance(elem);
+
+        // var instance = M.Collapsible.getInstance(elem);
+
+        // var q_elem = document.querySelector('.sidenav');
+        // var side_instance = M.Sidenav.init(elem, options);
+
+        // var collapsibleElem = document.querySelector('.collapsible');
+        // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
+
+        // var sel_instance = M.Select.getInstance(elem);
+        // var tf_instance =  M.updateTextFields();
+
+        // var date_elem = document.querySelector('.datepicker');
+        // var date_instance = M.Datepicker.init(elem, options);
+
+        // var time_elem = document.querySelector('.timepicker');
+        // var time_instance = M.Timepicker.init(elem, options);
+
+        // var modal_elem = document.querySelector('.modal');
+        // var modal_instance = M.Modal.init(elem, options);
+    </script>
+
+</body>
+
+</html>
