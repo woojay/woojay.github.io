@@ -1,0 +1,22 @@
+.main-header {
+  background: url(../img/baby1.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 350px;
+  color: #20bf6b;
+}
+.m-orange {
+  background: #ee6e73;
+}
+.m-orange-light {
+  background: #f6a2ad;
+}
+.m-brown {
+  background: #5c5757;
+}
+.indicator-item.active {
+  background-color: #ef9a9a !important;
+}
+.waves-materialize {
+  background-color: rgba(238, 110, 115, 0.5);
+}
