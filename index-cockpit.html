@@ -6,7 +6,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-  <link type="text/css" rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/styles-cockpit.css">
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,17 +14,400 @@
 </head>
 
 <body>
-  <h1>Theme Starter</h1>
 
-  <!--Import jQuery before materialize.js-->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      // Custom JS & jQuery here
+  <!-- Top Header -->
+  <header class="main-header">
+    <nav class="black">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href=#! class="brand-logo blue-grey-text">
+            Major Tom's Martian Vacation
+          </a>
+          <a href="#" data-activates="mobile-menu" class="button-collapse">
+            <i class="material-icons orange-text text-darken-3">menu</i>
+          </a>
+          <!-- Navbar TOP options -->
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="#!" data-position="bottom" data-delay="50" data-tooltip="Comm" class="blue-grey-text tooltipped z-depth-0 waves-effect waves-materialize btn-flat">
+                <i class="far fa-envelope blue-grey-text"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#!" data-position="bottom" data-delay="50" data-tooltip="Log" class="blue-grey-text tooltipped z-depth-0 waves-effect waves-materialize btn-flat">
+                <i class="far fa-address-book  blue-grey-text"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#!" data-position="bottom" data-delay="50" data-tooltip="Nav" class="blue-grey-text tooltipped z-depth-0 waves-effect waves-materialize btn-flat">
+                <i class="fas fa-street-view"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#!" data-position="bottom" data-delay="50" data-tooltip="Security" class="blue-grey-text tooltipped z-depth-0 waves-effect waves-materialize btn-flat">
+                <i class="fab fa-rebel"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#!" data-position="bottom" data-delay="50" data-tooltip="Settings" class="blue-grey-text tooltipped z-depth-0 waves-effect waves-materialize btn-flat">
+                <i class="fas fa-cog"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#!" data-position="bottom" data-delay="50" data-tooltip="Mute" class="blue-grey-text tooltipped z-depth-0 waves-effect waves-materialize btn-flat">
+                <i class="fas fa-bell-slash"></i>
+              </a>
+            </li>
+          </ul>
 
-    });
-  </script>
+          <ul id="mobile-menu" class="side-nav grey darken-4">
+            <li>
+              <div class="user-view">
+                <div class="background">
+                  <img src="../img/earth1-s.jpg">
+                </div>
+                <a href="#!">
+                  <img class="circle z-depth-5" src="../img/baby2-s.jpg">
+                </a>
+                <a href="#!">
+                  <span class="white-text name">Major Tom</span>
+                </a>
+                <a>
+                  <span class="white-text email">tom@space.agncy.com</span>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <a class="subheader  blue-grey-text" href="#!">Personal</a>
+            </li>
+
+            <li>
+              <a href="#!" class="blue-grey-text text-lighten-2 waves-effect ">
+                <i class="far fa-envelope blue-grey-text text-lighten-2 "></i> Comm
+              </a>
+            </li>
+            <li>
+              <a href="#!" class="blue-grey-text text-lighten-2  waves-effect ">
+                <i class="far fa-address-book  blue-grey-text text-lighten-2"></i> Log
+              </a>
+            </li>
+            <li>
+              <div class="divider grey darken-2"></div>
+            </li>
+            <li>
+              <a class="subheader blue-grey-text" href="#!">System</a>
+            </li>
+            <li>
+              <a href="#!" class="blue-grey-text text-lighten-2  waves-effect">
+                <i class="fas fa-street-view"></i> Nav
+              </a>
+            </li>
+            <li>
+              <a href="#!" class="blue-grey-text text-lighten-2  waves-effect ">
+                <i class="fab fa-rebel"></i> Security
+              </a>
+            </li>
+            <li>
+              <a href="#!" class="blue-grey-text text-lighten-2  waves-effect ">
+                <i class="fas fa-cog"></i> Settings
+              </a>
+            </li>
+            <li>
+              <div class="divider grey darken-2"></div>
+            </li>
+            <li>
+              <a class="subheader blue-grey-text" href="#!">Operation</a>
+            </li>
+            <li>
+              <a href="#!" class="blue-grey-text text-lighten-2  waves-effect ">
+                <i class="fas fa-bell-slash"></i> Mute
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Particle field -->
+  <div id="particles-js">
+  </div>
+
+  <!-- Status cards -->
+  <section class="top-status">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card blue-grey darken-2">
+            <div class="card-image center-align">
+              <img src="img/gauge1-b.jpg" alt="">
+              <span class="card-title orange-text text-darken-3">CAUTION</span>
+            </div>
+            <!-- ADD LINKS -->
+            <div class="card-action center-align">
+              <a href="#" class="orange-text text-darken-3">
+                <i class="fas fa-bolt orange-text text-darken-3"></i> ELEC
+              </a>
+              <a href="#" class="grey-text text-darken-2">
+                <i class="far fa-compass grey-text text-darken-2"></i> NAV
+              </a>
+              <a href="#" class="grey-text text-darken-2">
+                <i class="fas fa-fax"></i> COMM
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="card blue-grey darken-2">
+            <div class="card-image center-align">
+              <img src="img/gauge1-b.jpg" alt="">
+              <span class="card-title red-text text-darken-1">WARNING</span>
+            </div>
+            <!-- ADD LINKS -->
+            <div class="card-action center-align">
+              <a href="#" class="grey-text text-darken-2">
+                <i class="fab fa-hotjar"></i> FIRE
+              </a>
+              <a href="#" class="red-text text-darken-1">
+                <i class="fas fa-external-link-alt"></i> BREACH
+              </a>
+              <a href="#" class="grey-text text-darken-2">
+                <i class="fas fa-life-ring grey-text text-darken-2"></i> LIFE
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s6 m3">
+          <div class="card blue-grey darken-3">
+            <div class="card-content center-align  light-green-text text-darken-3">
+              <p class="card-stats-title">
+                <i class="fas fa-space-shuttle light-green-text text-darken-3"></i> FLOWN
+              </p>
+              <h5 class="card-stats-value">2003984 km</h5>
+              <span>84 Days</span>
+            </div>
+            <!-- ADD LINKS -->
+            <div class="card-action  center-align blue-grey darken-4">
+              <span id="sparkline1">1,2,4,5,9,10,11,14,24,37,55,89,120</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s6 m3">
+          <div class="card blue-grey darken-3">
+            <div class="card-content center-align light-green-text text-darken-3">
+              <p class="card-stats-title">
+                REMAINING
+                <i class="fas fa-space-shuttle light-green-text text-darken-3"></i>
+              </p>
+              <h5 class="card-stats-value">15603984 km</h5>
+              <span>215 Days</span>
+            </div>
+            <div class="card-action  center-align blue-grey darken-4">
+              <span id="sparkline2">120, 120, 119, 118, 117, 115, 114, 111, 107, 102</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s6 m3">
+          <div class="card blue-grey darken-3">
+            <div class="card-content center-align lime-text text-lighten-3">
+              <p class="card-stats-title">
+                OXYGEN REGENERATOR
+              </p>
+              <h5 class="card-stats-value"> 25Kg/h</h5>
+            </div>
+            <div class="card-action center-align blue-grey darken-4">
+              <h4 class=" lime-text text-lighten-3">
+                <i class="fas fa-exclamation-triangle lime-text text-lighten-3"></i> 92%</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s6 m3">
+          <div class="card blue-grey darken-3">
+            <div class="card-content center-align yellow-text text-darken-1">
+              <p class="card-stats-title">
+                STRUCTURAL INTEGRITY
+              </p>
+
+            </div>
+            <div class="card-action  center-align blue-grey darken-4">
+
+              <h4 class=" yellow-text text-darken-1">
+                <i class="fas fa-exclamation-circle yellow-text text-darken-1"></i> 83%</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Camera Views -->
+  <section class="cameras">
+    <div class="carousel">
+      <a class="carousel-item" href="#one!">
+        <img src="img/astronaut2.jpg">
+      </a>
+      <a class="carousel-item" href="#one!">
+        <img src="img/space.jpg">
+      </a>
+      <a class="carousel-item" href="#one!">
+        <img src="img/core.jpg">
+      </a>
+      <a class="carousel-item" href="#one!">
+        <img src="img/dock.jpg">
+      </a>
+      <a class="carousel-item" href="#one!">
+        <img src="img/bay.jpg">
+      </a>
+      <a class="carousel-item" href="#one!">
+        <img src="img/astronaut3.jpg">
+      </a>
+      <a class="carousel-item" href="#one!">
+        <img src="img/ship.jpg">
+      </a>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 center-align">
+          <h5 class="green-text">Monitor Cameras</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Text Views -->
+  <section class="text-views">
+    <div class="container">
+      <div class="row  blue-grey darken-1">
+        <div class="col s12 m8">
+          <div class="flow-text blue-grey darken-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sint doloremque ipsa obcaecati voluptatum expedita sapiente
+            pariatur laborum reprehenderit, libero, natus nam consequuntur, praesentium officiis optio. Eos placeat maiores
+            voluptatibus nesciunt obcaecati, quidem nemo, cupiditate, odit alias harum sint repellendus!
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="flow-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis velit dolore quisquam cupiditate recusandae consequuntur
+            perferendis sit et molestiae! Dignissimos, unde similique fugiat eligendi quod architecto. Vitae minima veritatis
+            modi?
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer -->
+    <footer class="page-footer red lighten-5">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="red-text text-lighten-2">About Us</h5>
+            <p class="red-text text-lighten-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ducimus, hic id quod enim voluptate
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="red-text text-lighten-3">Links</h5>
+            <ul>
+              <li>
+                <a class="red-text text-lighten-3" href="mailto:tenaciouswp@gmail.com">Contact Me</a>
+              </li>
+              <li>
+                <a class="red-text text-lighten-3" href="#!">Even</a>
+              </li>
+              <li>
+                <a class="red-text text-lighten-3" href="#!">Even More</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright red lighten-4">
+        <div class="container red-text text-lighten-1">
+          <a href="mailto:tenaciouswp@gmail.com" class=" red-text text-lighten-1">Woojay Poynter</a> &copy; 2018
+          <a class="red-text text-lighten-1 right" href="#!">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/fontawesome-all.js"></script>
+    <script type="text/javascript" src="js/particles.min.js"></script>
+    <script src="js/jquery.sparkline.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $('.carousel').carousel({
+          dist: -200,
+          duration: 1000,
+        });
+        $('.tooltipped').tooltip();
+        $('.button-collapse').sideNav({
+          menuWidth: 300,
+          edge: 'left',
+          closeOnClick: false,
+          draggable: true,
+          onOpen: function () { console.log('Menu Open') },
+          onClose: function () { console.log('Menu Close') }
+        });
+
+        particlesJS.load('particles-js', 'particles.json', function () {
+          console.log('particles.json loaded...');
+        });
+
+      });
+
+      $('#sparkline1').sparkline('html', {
+        type: 'line',
+        lineColor: '#558B2F',
+        fillColor: false,
+        width: '70%',
+        lineWidth: 5,
+        height: 50,
+        spotColor: undefined,
+        minSpotColor: undefined,
+        maxSpotColor: undefined,
+        highlightSpotColor: undefined,
+        highlightLineColor: undefined,
+        chartRangeMin: 0,
+        chartRangeMinX: 0,
+        normalRangeMin: 0,
+        drawNormalOnTop: true
+      });
+
+      $('#sparkline2').sparkline('html', {
+        type: 'line',
+        lineColor: '#558B2F',
+        fillColor: false,
+        width: '70%',
+        lineWidth: 5,
+        height: 50,
+        spotColor: undefined,
+        minSpotColor: undefined,
+        maxSpotColor: undefined,
+        highlightSpotColor: undefined,
+        highlightLineColor: undefined,
+        chartRangeMin: 0,
+        chartRangeMinX: 0,
+        normalRangeMin: 0,
+        drawNormalOnTop: true
+      });
+
+    </script>
 </body>
 
 </html>

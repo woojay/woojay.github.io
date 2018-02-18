@@ -1,26 +1,56 @@
-body{
-  margin:0;
+body {
+  margin: 0;
   font: normal 16px Arial, Helvetica, sand-serif;
-  color:#333;
+  background-color: #212121;
 }
 
-#particles-js{
-  background:firebrick;
-  height:400px;
+#particles-js {
+  background: black;
+  width: 100%;
+  height: 160px;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.waves-materialize {
+  background-color: rgba(238, 110, 115, 0.2);
+}
+.btn-flat {
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+  padding-left: 4px !important;
+  padding-right: 4px !important;
 }
 
-#login{
-  background:#fff;
-  opacity:0.9;
-  padding:2em;
-  border:#ccc 2px solid;
-  position:absolute;
-  top:100px;
-  left:50px;
+.card .card-content {
+  padding: 24px 10px 10px 15px !important;
+  margin-bottom: 0px !important;
+}
+.card-action {
+  /* border-width: 1px;
+  border-style: solid;
+  border-radius: 5px; */
+  padding: 10px 3px !important;
+  margin: 5px 2px !important;
 }
 
-#login input[type="text"], #login input[type="password"]{
-  padding:7px;
-  margin-bottom:10px;
-  border:1px #ccc solid;
+.ct-series-a .ct-bar,
+.ct-series-a .ct-line,
+.ct-series-a .ct-point,
+.ct-series-a .ct-slice-donut {
+  stroke: #0cc162;
+}
+.ct-series-b .ct-bar,
+.ct-series-b .ct-line,
+.ct-series-b .ct-point,
+.ct-series-b .ct-slice-donut {
+  stroke: #bbbbbb;
+}
+.ct-chart {
+  margin: 5px;
+  color: rgb(131, 189, 66);
+}
+.carousel .carousel-item {
+  width: 300px !important;
 }
