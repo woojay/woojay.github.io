@@ -134,12 +134,29 @@
   <div id="particles-js">
   </div>
 
+  <!-- Preloader -->
+  <div class="center">
+    <div class="loader preloader-wrapper big active " style="margin-top:50px;">
+      <div class="spinner-layer spinner-blue-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Status cards -->
-  <section class="top-status">
+  <section class="top-status section" style="background-color: #4c4c4c;">
     <div class="container">
       <div class="row">
         <div class="col s12 m6">
-          <div class="card blue-grey darken-2">
+          <div class="card blue-grey darken-2  z-depth-5">
             <div class="card-image center-align">
               <img src="img/gauge1-b.jpg" alt="">
               <span class="card-title orange-text text-darken-3">CAUTION</span>
@@ -160,7 +177,7 @@
         </div>
 
         <div class="col s12 m6">
-          <div class="card blue-grey darken-2">
+          <div class="card blue-grey darken-2  z-depth-5">
             <div class="card-image center-align">
               <img src="img/gauge1-b.jpg" alt="">
               <span class="card-title red-text text-darken-1">WARNING</span>
@@ -183,64 +200,90 @@
 
       <div class="row">
         <div class="col s6 m3">
-          <div class="card blue-grey darken-3">
+          <div class="card blue-grey darken-3  z-depth-5">
             <div class="card-content center-align  light-green-text text-darken-3">
-              <p class="card-stats-title">
-                <i class="fas fa-space-shuttle light-green-text text-darken-3"></i> FLOWN
-              </p>
-              <h5 class="card-stats-value">2003984 km</h5>
-              <span>84 Days</span>
+              <h4>
+                <i class="fas fa-space-shuttle light-green-text text-darken-3"></i>
+              </h4>
+              <h5 class="card-stats-title">
+                VELOCITY
+              </h5>
+              <h5 class="card-stats-value count">
+                2784
+              </h5>
+              <div class="progress blue-grey darken-4">
+                <div class="determinate grey" style="width: 67%;"></div>
+              </div>
             </div>
             <!-- ADD LINKS -->
             <div class="card-action  center-align blue-grey darken-4">
-              <span id="sparkline1">1,2,4,5,9,10,11,14,24,37,55,89,120</span>
+              <span id="sparkline1">1,2,4,5,9,10,11,14,24,37,55,40,89,80,120</span>
             </div>
           </div>
         </div>
 
         <div class="col s6 m3">
-          <div class="card blue-grey darken-3">
+          <div class="card blue-grey darken-3 z-depth-5">
             <div class="card-content center-align light-green-text text-darken-3">
-              <p class="card-stats-title">
-                REMAINING
-                <i class="fas fa-space-shuttle light-green-text text-darken-3"></i>
-              </p>
-              <h5 class="card-stats-value">15603984 km</h5>
-              <span>215 Days</span>
+              <h4>
+                <i class="far fa-map light-green-text text-darken-3"></i>
+              </h4>
+              <h5 class="card-stats-title">
+                NAV DAYS
+              </h5>
+              <h5 class="card-stats-value count">
+                215
+              </h5>
+              <div class="progress blue-grey darken-4">
+                <div class="determinate grey" style="width: 38%;"></div>
+              </div>
             </div>
             <div class="card-action  center-align blue-grey darken-4">
-              <span id="sparkline2">120, 120, 119, 118, 117, 115, 114, 111, 107, 102</span>
+              <span id="sparkline2">10, 120, 150, 60, 28, 117, 14, 45, 86, 96</span>
             </div>
           </div>
         </div>
 
         <div class="col s6 m3">
-          <div class="card blue-grey darken-3">
+          <div class="card blue-grey darken-3 z-depth-5">
             <div class="card-content center-align lime-text text-lighten-3">
+              <h4>
+                <i class="fas fa-exclamation-triangle lime-text text-lighten-3"></i>
+              </h4>
               <p class="card-stats-title">
                 OXYGEN REGENERATOR
               </p>
-              <h5 class="card-stats-value"> 25Kg/h</h5>
+              <h5 class="card-stats-value count">
+                92.5
+              </h5>
+              <div class="progress blue-grey darken-4">
+                <div class="determinate lime lighten-3" style="width: 92%;"></div>
+              </div>
             </div>
             <div class="card-action center-align blue-grey darken-4">
-              <h4 class=" lime-text text-lighten-3">
-                <i class="fas fa-exclamation-triangle lime-text text-lighten-3"></i> 92%</h4>
+              <span id="sparkline3">95,94,89,99,94,95,92,95,93,90,89,95</span>
             </div>
           </div>
         </div>
 
         <div class="col s6 m3">
-          <div class="card blue-grey darken-3">
+          <div class="card blue-grey darken-3 z-depth-5">
             <div class="card-content center-align yellow-text text-darken-1">
+              <h4>
+                <i class="fas fa-exclamation-circle yellow-text text-darken-1"></i>
+              </h4>
               <p class="card-stats-title">
                 STRUCTURAL INTEGRITY
               </p>
-
+              <h5 class="card-stats-value count">
+                83.5
+              </h5>
+              <div class="progress blue-grey darken-4">
+                <div class="determinate yellow darken-1" style="width: 92%;"></div>
+              </div>
             </div>
             <div class="card-action  center-align blue-grey darken-4">
-
-              <h4 class=" yellow-text text-darken-1">
-                <i class="fas fa-exclamation-circle yellow-text text-darken-1"></i> 83%</h4>
+              <span id="sparkline4">100, 99, 100, 100, 99, 98, 99, 95, 94, 91, 95, 90,88,85,82</span>
             </div>
           </div>
         </div>
@@ -249,8 +292,8 @@
   </section>
 
   <!-- Camera Views -->
-  <section class="cameras">
-    <div class="carousel">
+  <section class="cameras section">
+    <div class="carousel ">
       <a class="carousel-item" href="#one!">
         <img src="img/astronaut2.jpg">
       </a>
@@ -276,81 +319,273 @@
     <div class="container">
       <div class="row">
         <div class="col s12 center-align">
-          <h5 class="green-text">Monitor Cameras</h5>
+          <h5 class="blue-grey-text">Monitor Cameras</h5>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Text Views -->
-  <section class="text-views">
+  <div style="height: 80px;"></div>
+
+  <!-- Collapsible Options -->
+  <section class="collapsible-views section" style="background-color: #4c4c4c;">
     <div class="container">
-      <div class="row  blue-grey darken-1">
-        <div class="col s12 m8">
-          <div class="flow-text blue-grey darken-1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sint doloremque ipsa obcaecati voluptatum expedita sapiente
-            pariatur laborum reprehenderit, libero, natus nam consequuntur, praesentium officiis optio. Eos placeat maiores
-            voluptatibus nesciunt obcaecati, quidem nemo, cupiditate, odit alias harum sint repellendus!
+      <div class="row">
+        <div class="col s12">
+          <ul class="collapsible z-depth-5 blue-grey darken-3" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header light-green-text text-darken-3 blue-grey darken-4">
+                <i class="fas fa-book fa-fw light-green-text text-darken-3 blue-grey darken-4"></i> Instruction Manual</div>
+            </li>
+
+            <li>
+              <div class="collapsible-header light-green-text text-darken-3 blue-grey darken-3">
+                <i class="fas fa-book fa-fw light-green-text text-darken-3 blue-grey darken-3"></i> Chapter 1. Survival</div>
+              <div class="collapsible-body light-green-text text-darken-2 blue-grey darken-2">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header  light-green-text text-darken-3 blue-grey darken-3">
+                <i class="fas fa-book fa-fw  light-green-text text-darken-3 blue-grey darken-3"></i> Chapter 2. Operation</div>
+              <div class="collapsible-body light-green-text text-darken-2  blue-grey darken-2">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header  light-green-text text-darken-3 blue-grey darken-3">
+                <i class="fas fa-book fa-fw  light-green-text text-darken-3 blue-grey darken-3"></i> Chapter 3. Colonization</div>
+              <div class="collapsible-body light-green-text text-darken-2 blue-grey darken-2">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="collapsible-header  lime-text text-lighten-3 blue-grey darken-3">
+                <i class="fas fa-bookmark fa-fw  lime-text text-lighten-3 blue-grey darken-3"></i> Chapter 4. Saved References</div>
+              <div class="collapsible-body light-green-text text-darken-2 blue-grey darken-2">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header  light-green-text text-darken-3 blue-grey darken-3">
+                <i class="fas fa-address-book fa-fw  light-green-text text-darken-3 blue-grey darken-3"></i> Index</div>
+              <div class="collapsible-body light-green-text text-darken-2 blue-grey darken-2">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cards Views -->
+  <section class="text-views section" style="background-color: #373737;">
+    <div class=" container">
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card medium blue-grey lighten-2">
+            <div class="card-image">
+              <img src="img/control.jpg">
+            </div>
+            <div class="card-content blue-grey-text text-darken-4">
+              <span class="card-title  blue-grey-text text-darken-4">Operation One</span>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi harum enim inventore ullam expedita nesciunt
+                ea voluptatem corporis iusto sint?</p>
+            </div>
+            <div class="card-action">
+              <a href="#!" class="green-text text-darken-2" style="margin-left: 10px;">Proceed</a>
+            </div>
           </div>
         </div>
         <div class="col s12 m4">
-          <div class="flow-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis velit dolore quisquam cupiditate recusandae consequuntur
-            perferendis sit et molestiae! Dignissimos, unde similique fugiat eligendi quod architecto. Vitae minima veritatis
-            modi?
+          <div class="card medium blue-grey lighten-2">
+            <div class="card-image">
+              <img src="img/rack2.jpg">
+            </div>
+            <div class="card-content blue-grey-text text-darken-4">
+              <span class="card-title  blue-grey-text text-darken-4">Operation Two</span>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi harum enim inventore ullam expedita nesciunt
+                ea voluptatem corporis iusto sint?</p>
+            </div>
+            <div class="card-action">
+              <a href="#!" class="green-text text-darken-2" style="margin-left: 10px;">Proceed</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card medium blue-grey lighten-2">
+            <div class="card-image">
+              <img src="img/rack1.jpg">
+            </div>
+            <div class="card-content blue-grey-text text-darken-4">
+              <span class="card-title  blue-grey-text text-darken-4">Operation Three</span>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi harum enim inventore ullam expedita nesciunt
+                ea voluptatem corporis iusto sint?</p>
+            </div>
+            <div class="card-action">
+              <a href="#!" class="green-text text-darken-2" style="margin-left: 10px;">Proceed</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    </div>
   </section>
 
-    <!-- Footer -->
-    <footer class="page-footer red lighten-5">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="red-text text-lighten-2">About Us</h5>
-            <p class="red-text text-lighten-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ducimus, hic id quod enim voluptate
-            </p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="red-text text-lighten-3">Links</h5>
-            <ul>
-              <li>
-                <a class="red-text text-lighten-3" href="mailto:tenaciouswp@gmail.com">Contact Me</a>
-              </li>
-              <li>
-                <a class="red-text text-lighten-3" href="#!">Even</a>
-              </li>
-              <li>
-                <a class="red-text text-lighten-3" href="#!">Even More</a>
-              </li>
+  <!-- Inventory Table -->
+  <section class="inventory-table section" style="background-color: #4c4c4c;">
+    <div class="container">
+      <div class="row">
+        <table class="highlight responsive-table z-depth-5">
+          <thead class="blue-grey lighten-1">
+            <tr>
+              <th>System Inventory Item</th>
+              <th>Quantity</th>
+              <th>Loc</th>
+              <th>Endurance</th>
+              <th>Expiration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lorem</td>
+              <td>47</td>
+              <td>Curabitur dictum.</td>
+              <td>71</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>Lorem ipsum dolor sit</td>
+              <td>51</td>
+              <td>molestie sodales.</td>
+              <td>20</td>
+              <td>19</td>
+            </tr>
+            <tr>
+              <td>Lorem ipsum dolor</td>
+              <td>60</td>
+              <td>arcu et</td>
+              <td>95</td>
+              <td>101</td>
+            </tr>
+            <tr>
+              <td>Lorem ipsum dolor sit</td>
+              <td>148</td>
+              <td>malesuada. Integer</td>
+              <td>85</td>
+              <td>76</td>
+            </tr>
+            <tr>
+              <td>Lorem ipsum</td>
+              <td>109</td>
+              <td>rhoncus. Nullam</td>
+              <td>6</td>
+              <td>93</td>
+            </tr>
+            <tr>
+              <td>Lorem ipsum</td>
+              <td>66</td>
+              <td>ac mi</td>
+              <td>78</td>
+              <td>115</td>
+            </tr>
+            <tr>
+              <td>Lorem ipsum</td>
+              <td>39</td>
+              <td>vel, mauris.</td>
+              <td>97</td>
+              <td>72</td>
+            </tr>
+            <tr>
+              <td>Lorem</td>
+              <td>64</td>
+              <td>justo faucibus</td>
+              <td>94</td>
+              <td>147</td>
+            </tr>
+            <tr>
+              <td>Lorem</td>
+              <td>51</td>
+              <td>Aliquam erat</td>
+              <td>73</td>
+              <td>16</td>
+            </tr>
+          </tbody>
 
-            </ul>
-          </div>
+        </table>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="page-footer blue-grey lighten-2 ">
+    <div class="container ">
+      <div class="row ">
+        <div class="col l6 s12 ">
+          <h5 class="blue-grey-text text-darken-4 ">About Us</h5>
+          <p class="blue-grey-text text-darken-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ducimus, hic id quod enim voluptate
+          </p>
+        </div>
+        <div class="col l4 offset-l2 s12 ">
+          <h5 class="blue-grey-text text-darken-4 ">Links</h5>
+          <ul>
+            <li>
+              <a class="blue-grey-text text-darken-4 " href="mailto:tenaciouswp@gmail.com ">Contact Me</a>
+            </li>
+            <li>
+              <a class="blue-grey-text text-darken-4 " href="https://woojay.github.io/index-family.html ">First</a>
+            </li>
+            <li>
+              <a class="blue-grey-text text-darken-4 " href="#! ">Even More</a>
+            </li>
+
+          </ul>
         </div>
       </div>
-      <div class="footer-copyright red lighten-4">
-        <div class="container red-text text-lighten-1">
-          <a href="mailto:tenaciouswp@gmail.com" class=" red-text text-lighten-1">Woojay Poynter</a> &copy; 2018
-          <a class="red-text text-lighten-1 right" href="#!">Terms &amp; Conditions</a>
-        </div>
+    </div>
+    <div class="footer-copyright blue-grey ">
+      <div class="container blue-grey-text text-darken-4 ">
+        <a href="mailto:tenaciouswp@gmail.com " class=" blue-grey-text text-darken-4 ">Woojay Poynter</a> &copy; 2018
+        <a class="blue-grey-text text-darken-4 right " href="#! ">Terms &amp; Conditions</a>
       </div>
-    </footer>
+    </div>
+  </footer>
 
 
 
 
 
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script src="js/fontawesome-all.js"></script>
-    <script type="text/javascript" src="js/particles.min.js"></script>
-    <script src="js/jquery.sparkline.min.js"></script>
 
-    <script>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript " src="https://code.jquery.com/jquery-3.2.1.min.js "></script>
+  <script type="text/javascript " src="js/materialize.min.js "></script>
+  <script src="js/fontawesome-all.js "></script>
+  <script type="text/javascript " src="js/particles.min.js "></script>
+  <script src="js/jquery.sparkline.min.js "></script>
+
+  <script>
+    // Hide Sections
+    $('.section').hide();
+
+    setTimeout(function () {
+
       $(document).ready(function () {
+        // Show sections
+        $('.section').fadeIn();
+
+        // Hide preloader
+        $('.loader').fadeOut();
+
+        $('.collapsible').collapsible();
+
         $('.carousel').carousel({
           dist: -200,
           duration: 1000,
@@ -369,45 +604,97 @@
           console.log('particles.json loaded...');
         });
 
+        // sparklines
+        $('#sparkline1').sparkline('html', {
+          type: 'line',
+          lineColor: '#558B2F',
+          fillColor: false,
+          width: '70%',
+          lineWidth: 5,
+          height: 50,
+          spotColor: undefined,
+          minSpotColor: undefined,
+          maxSpotColor: undefined,
+          highlightSpotColor: undefined,
+          highlightLineColor: undefined,
+          chartRangeMin: 0,
+          chartRangeMinX: 0,
+          normalRangeMin: 0,
+          drawNormalOnTop: true
+        });
+
+        $('#sparkline2').sparkline('html', {
+          type: 'line',
+          lineColor: '#558B2F',
+          fillColor: false,
+          width: '70%',
+          lineWidth: 5,
+          height: 50,
+          spotColor: undefined,
+          minSpotColor: undefined,
+          maxSpotColor: undefined,
+          highlightSpotColor: undefined,
+          highlightLineColor: undefined,
+          chartRangeMin: 0,
+          chartRangeMinX: 0,
+          normalRangeMin: 0,
+          drawNormalOnTop: true
+        });
+
+        $('#sparkline3').sparkline('html', {
+          type: 'line',
+          lineColor: '#e6ee9c',
+          fillColor: false,
+          width: '70%',
+          lineWidth: 5,
+          height: 50,
+          spotColor: undefined,
+          minSpotColor: undefined,
+          maxSpotColor: undefined,
+          highlightSpotColor: undefined,
+          highlightLineColor: undefined,
+          chartRangeMin: 80,
+          chartRangeMinX: 0,
+          normalRangeMin: 80,
+          drawNormalOnTop: true
+        });
+
+        $('#sparkline4').sparkline('html', {
+          type: 'line',
+          lineColor: '#fdd835',
+          fillColor: false,
+          width: '70%',
+          lineWidth: 5,
+          height: 50,
+          spotColor: undefined,
+          minSpotColor: undefined,
+          maxSpotColor: undefined,
+          highlightSpotColor: undefined,
+          highlightLineColor: undefined,
+          chartRangeMin: 80,
+          chartRangeMinX: 0,
+          normalRangeMin: 80,
+          drawNormalOnTop: true
+        });
+
       });
 
-      $('#sparkline1').sparkline('html', {
-        type: 'line',
-        lineColor: '#558B2F',
-        fillColor: false,
-        width: '70%',
-        lineWidth: 5,
-        height: 50,
-        spotColor: undefined,
-        minSpotColor: undefined,
-        maxSpotColor: undefined,
-        highlightSpotColor: undefined,
-        highlightLineColor: undefined,
-        chartRangeMin: 0,
-        chartRangeMinX: 0,
-        normalRangeMin: 0,
-        drawNormalOnTop: true
+      // Count animation
+      $('.count').each(function () {
+        $(this).prop('Counter', 0).animate({
+          Counter: $(this).text()
+        }, {
+            duration: 1000,
+            easing: 'swing',
+            step: function (now) {
+              $(this).text(Math.ceil(now));
+            }
+          });
       });
 
-      $('#sparkline2').sparkline('html', {
-        type: 'line',
-        lineColor: '#558B2F',
-        fillColor: false,
-        width: '70%',
-        lineWidth: 5,
-        height: 50,
-        spotColor: undefined,
-        minSpotColor: undefined,
-        maxSpotColor: undefined,
-        highlightSpotColor: undefined,
-        highlightLineColor: undefined,
-        chartRangeMin: 0,
-        chartRangeMinX: 0,
-        normalRangeMin: 0,
-        drawNormalOnTop: true
-      });
 
-    </script>
+    }, 1000);
+  </script>
 </body>
 
 </html>

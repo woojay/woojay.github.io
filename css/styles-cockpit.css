@@ -54,3 +54,12 @@ body {
 .carousel .carousel-item {
   width: 300px !important;
 }
+
+tbody tr:nth-child(even) {
+  background-color: #607d8b;
+  color: #263238;
+}
+tbody tr:nth-child(odd) {
+  background-color: #546e7a;
+  color: #263238;
+}
