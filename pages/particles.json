@@ -1,7 +1,7 @@
 {
   "particles": {
     "number": {
-      "value": 200,
+      "value": 35,
       "density": {
         "enable": true,
         "value_area": 200
@@ -22,15 +22,15 @@
       "image": {
         "src": "img/github.svg",
         "width": 100,
-        "height": 100
+        "height": 500
       }
     },
     "opacity": {
-      "value": 0.5,
+      "value": 0.8,
       "random": false,
       "anim": {
         "enable": false,
-        "speed": 1,
+        "speed": 2,
         "opacity_min": 0.1,
         "sync": false
       }
@@ -46,7 +46,7 @@
       }
     },
     "line_linked": {
-      "enable": false,
+      "enable": true,
       "distance": 150,
       "color": "#ffffff",
       "opacity": 0.4,
@@ -54,10 +54,10 @@
     },
     "move": {
       "enable": true,
-      "speed": 0.2,
+      "speed": 1,
       "direction": "top-left",
-      "random": false,
-      "straight": true,
+      "random": true,
+      "straight": false,
       "out_mode": "out",
       "attract": {
         "enable": false,
@@ -70,7 +70,7 @@
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": false,
+        "enable": true,
         "mode": "repulse"
       },
       "onclick": {
@@ -88,13 +88,13 @@
       },
       "bubble": {
         "distance": 400,
-        "size": 40,
+        "size": 5,
         "duration": 2,
         "opacity": 8,
-        "speed": 3
+        "speed": 15
       },
       "repulse": {
-        "distance": 200
+        "distance": 50
       },
       "push": {
         "particles_nb": 4

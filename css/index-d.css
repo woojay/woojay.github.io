@@ -1,0 +1,232 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  /* font-family: 'Playfair Display', Times, 'Times New Roman', serif; */
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+.main-header {
+  opacity: 0;
+}
+.pimg1,
+.pimg2,
+.pimg3 {
+  position: relative;
+  opacity: 0.8 !important;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;  
+  /*
+  fixed = parallax
+  scroll = normal
+  */
+  background-attachment: fixed;
+
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.pimg1 {
+  background-image: url('../img/shortstack.jpg');
+  /* top: 0;
+  left: 0; */
+  min-height: 100%;
+}
+
+/* .pimg1-bottom{
+  background-image: url('../img/shortstack.jpg');
+  min-height: 100%;
+} */
+
+.pimg2 {
+  background-image: url('../img/coffee.jpg');
+  min-height: 500px;
+}
+
+.pimg3 {
+  background-image: url('../img/topstack.jpg');
+  min-height: 500px;
+}
+
+section, h2 {
+  margin-top: 0px;
+}
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+  /* padding-top: 0px !important;
+  padding-bottom: 0px !important; */
+  margin: 0px !important;
+}
+
+.section-clear {
+  background-color: transparent;
+}
+
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-dark {
+  /* background-color: #282e34; */
+  background-color: #41474d;
+  color: #ddd;
+}
+
+.ptext {
+  position: absolute;
+  /* top: 30%; */
+  /* left:15%; */
+  width: 100%;
+  text-align: left;
+  color: #000;
+  font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* letter-spacing: 8px; */
+  /* text-transform: uppercase; */
+}
+
+.ptext .border {
+  background-color: #111;
+  color: #fff;
+  /* padding: 20px; */
+}
+
+.testimonial {
+  color: rgb(190, 190, 190);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.title-text-1 {
+  background-color: transparent;
+  color: #444;
+  /* padding: 20px; */
+  /* position: absolute;
+  top: 15%; */
+  font-family: 'Playfair Display', Times, 'Times New Roman', serif;
+  text-align: left;
+  /* margin-left: 10%; */
+  font-size: 90px;
+  font-weight: 1000;
+  letter-spacing: 2px;
+  line-height: 0.9em;
+  text-shadow: 5px 5px 10px #aaa;
+  animation: fadein-1 2s ease-in 0s 1;
+}
+
+.title-text-2 {
+  background-color: transparent;
+  color: #444;
+  font-family: 'Playfair Display', Times, 'Times New Roman', serif;
+  text-align: left;
+  font-size: 80px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 0.9em;
+  text-shadow: 3px 3px 5px #aaa;
+  animation: fadein-2 2s ease-in 0s 1;
+}
+
+.title-text-3 {
+  background-color: transparent;
+  color: #444;
+  text-align: left;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 0.9em;
+  text-shadow: 2px 2px 5px #aaa;
+  animation: fadein-3 2s ease-in 0s 1;
+}
+.ptext .border.trans {
+  background-color: transparent;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+@keyframes fadein-1 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.3;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes fadein-2 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes fadein-3 {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes fadein-4 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* .main-header .showcase {
+  padding-top: 100px;
+} */
+
+.zero-height {
+  height: 0px;
+}
+
+@media (max-width: 568px) {
+  .pimg1,
+  .pimg2,
+  .pimg3 {
+    background-attachment: scroll;
+  }
+}
