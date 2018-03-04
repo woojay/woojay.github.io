@@ -53,6 +53,7 @@ p{
 .main-header h2 {
   font-family: 'Josefin Sans', 'sans-serif';
   font-weight: 300;
+  text-align: center !important;
 }
 .fold {
   margin-top : 10px;
