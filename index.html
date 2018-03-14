@@ -1,19 +1,295 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <meta http-equiv="refresh" content="0; url=http://woojay.github.io/index-d.html" /> -->
-    <meta http-equiv="refresh" content="0; url=http://woojay.github.io/index_port.html" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Woojay Poynter</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles_port.css" rel="stylesheet">
 </head>
 
 <body>
-    <p>
-        <a href="http://woojay.github.io/index_port.html">Redirect to woojay.github.io</a>
-    </p>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span>
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Woojay Poynter</h1>
+            <h2>Software Engineer</h2>
+            <a href="Woojay Poynter CV.pdf" class="btn-rounded-white">Download Resume</a>
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        A hard-working and ever-learning software engineer focused on front-end web apps and web platform
+                        development using Javascript and a bit of full-stack development with Python Flask among other things.
+                        My first web app was a perl script event calendar for my University
+                        a long long time ago. Nowadays, I'm trying to get a better handle on React and Angular based framework
+                        but also paying attention to mobile delivery like AMP and Flutter, as well as server-less cloud models.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="April 2017 – Present">
+                <h3>Modis GmbH</h3>
+                <h4>Chief Technology Officer</h4>
+                <p>
+                    Partner, Software and embedded firmware developer. Built a python flask full-stack web app to accompany the hardware product.
+                    Managed development, testing, and prototype design and development. Developed an ARM Cortex MCU firmware
+                    in C and Python.
+                </p>
+            </div>
+
+            <div data-date="February 2016 – April 2017">
+                <h3>Modis GmbH</h3>
+                <h4>Embedded Engineer</h4>
+                <p>
+                    Developed and test prototype firmware for ARM Cortex MCU and peripherals using USB, SPI, RS485, and CAN bus as well as RTOS
+                    using C.
+                </p>
+            </div>
+
+            <div data-date="November 2008 – March 2017">
+                <h3>Oregon Coast Culinary Institute, SWOCC</h3>
+                <h4>Professor</h4>
+                <p>
+                    Instructed the college's Culinary Arts curriculum including Management, Nutrition, and Sanitatation. Also taught its entire
+                    Baking and Pastry Arts program.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>University of Oklahoma</h3>
+            <span class="education-date">1999 - 2002</span>
+            <h4>Master of Economics</h4>
+            <ul>
+                <li>Information Management</li>
+                <li>Finance</li>
+                <li>Statistics</li>
+            </ul>
+        </div>
+        <!-- End .education-block -->
+
+        <div class="education-block">
+            <h3>Michigan Technological University</h3>
+            <span class="education-date">1992 - 1996</span>
+            <h4>Bachelor of Science in Computer Science</h4>
+            <ul>
+                <li>
+                    Software Engineering
+                </li>
+                <li>
+                    C / C++ / Assembly / Fortran / Pascal
+                </li>
+                <li>
+                    Computer Graphics
+                </li>
+            </ul>
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="img/port_1s.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Chef Mom Food</h3>
+                        <p>
+                            Currently in development. A personal info-blogging website for a professional chef. Node, Express, MongoDB, ES6, Webpack,
+                            Babel, Passport and etc.
+                        </p>
+                        <!-- <a href="#">View Project</a> -->
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="img/port_2s.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Development Portfolio Pages</h3>
+                        <p>
+                            A collection of portfolio pages, mostly using Materialize CSS theme. Parallax scroll, responsive navbar, and the prototype
+                            mockup of the Chef Mom Food project
+                        </p>
+                        <a href="http://woojay.github.io/index-d.html">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>Front-End</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript/ES6</li>
+            <li>jQuery</li>
+            <li>Bootstrap</li>
+            <li>Materialize CSS</li>
+            <li>Node.js</li>
+            <li>Webpack</li>
+            <li>Babel</li>
+            <li>Gulp</li>
+            <li>AngularJs</li>
+            <li>SASS</li>
+            <li>Git</li>
+            <li>MongoDB</li>
+            <li>NoSQL</li>
+            <li>MySQL</li>
+
+            <li>Python</li>
+            <li>Flask</li>
+            <li>Sphinx</li>
+
+            <li>C</li>
+            <li>C++</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="contact">
+        <h2>Hire me!</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/tenaciouswp@gmail.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2018 Woojay Poynter
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/woojay" target="_blank">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://stackoverflow.com/users/8140771/woojay" target="_blank">
+                                <i class="fa fa-stack-overflow" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/w00jay" target="_blank">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/u/tenaciouswp" target="_blank">
+                                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instructables.com/id/Gyro-Stabilizer-W-Arduino-and-Servo/" target="_blank">
+                                <img src="img/instr_s.gif" height="18" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts_port.min.js"></script>
 </body>
 
 </html>
